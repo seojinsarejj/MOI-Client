@@ -1,0 +1,21 @@
+@charset "UTF-8";
+* {
+    margin:0;
+    font-family: Roboto;
+}
+
+.navitem {
+    color : #A3AFB6;
+    font-size : 30px;
+    font-weight: bold;
+    margin-left:150px;
+    margin-right:150px;
+}
+
+.active_navitem {
+    color : #ff0202;
+    font-size : 30px;
+    font-weight: bold;
+    margin-left:150px;
+    margin-right:150px;
+}
