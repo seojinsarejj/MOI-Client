@@ -6,7 +6,7 @@
 
 a:link { color: red; text-decoration: none;}
 a:visited { color: black; text-decoration: none;}
-a:hover { color: blue; text-decoration: underline;}
+a:hover { color: #FF9F03; text-decoration: none;}
 
 
 .list {
@@ -15,8 +15,6 @@ a:hover { color: blue; text-decoration: underline;}
     justify-content: flex-start;
     align-items: center;
 }
-
-
 
 
 .hr_v {

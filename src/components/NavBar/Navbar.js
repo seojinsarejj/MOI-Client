@@ -10,11 +10,11 @@ class Navbar extends Component {
             
             <div>
                 <div class = "list">
-                    <NavItem  name="프로젝트" is_active={active===1} onClick = {() => onNavItemClick(1)}/>
+                    <NavItem  name="프로젝트"/>
                     <hr className="hr_v"/>
-                    <NavItem  name="학생" is_active={active===2} onClick = {() => onNavItemClick(2)}/>
+                    <NavItem  name="학생"/>
                     <hr className="hr_v"/>
-                    <NavItem  name="통계" is_active={active===3} onClick = {() => onNavItemClick(3)}/>
+                    <NavItem  name="통계"/>
 
                 </div>
                 <div>

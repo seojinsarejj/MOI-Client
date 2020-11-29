@@ -3,14 +3,11 @@ import './NavItem.css';
 
 class NavItem extends Component {
     render () {
-        const { name,is_active,onClick } = this.props;
+        const {name} = this.props;
         return (
-            <div
-                className = {is_active ? "active_navitem" : "navitem"}
-                onClick = {onClick}
-            >
+            <a className="navitem" href = "">
                 {name}
-            </div>
+            </a>
         );
     }
 }
