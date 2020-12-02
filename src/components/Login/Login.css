@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {
+    margin:0;
+    font-family: Roboto;
+}
+
+
+.loginPage {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.loginHeader {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.loginLogo {
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.loginInput {
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.InputBox {
+    display:flex;
+    margin-top:50px;
+    width: 1000px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #FF9F03;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size : 60px;
+}
+
+.transBtn {
+    width: 400px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #FF9F03;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size : 30px;
+    font-weight: bold;
+    color:#FF9F03;
+    margin-top: 50px;
+}
+
+.loginFooter {
+    display:flex;
+    justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.loginBtn {
+    width: 161px;
+    height: 67px;
+
+    background: #FF9F03;
+    border-radius: 20px 0px 0px 0px;
+    font-size: 50px;
+
+}
+
+.loginBtn:hover {
+    background: hsl(37, 100%, 55%) radial-gradient(circle, transparent 1%, #FFCB3D 1%) center/15000%;
+  }
+
+
+.loginBtn:active {
+    background-color: #ffffff;
+    background-size: 100%;
+    transition: background 0.4s;
+  }
+
+
+.transBtn:hover {
+    background: hsl(39, 100%, 97%) radial-gradient(circle, transparent 1%, #fff7f7 1%) center/15000%;
+  }
+
+
+.transBtn:active {
+    background-color: #ffffff;
+    background-size: 100%;
+    transition: background 0.4s;
+  }
