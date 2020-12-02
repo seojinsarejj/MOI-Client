@@ -1,0 +1,12 @@
+@charset "UTF-8";
+* {
+    margin:0;
+    font-family: Roboto;
+}
+
+
+.modalHeader {
+    display:flex;
+    justify-content: flex-end;
+	align-items: baseline;
+}

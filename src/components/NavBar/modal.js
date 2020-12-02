@@ -1,14 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import './modal.css'
 
-function Modal({ className, visible, children }) {
+function Modal({ className, visible, children, close }) {
   return (
     <>
       <ModalOverlay visible={visible} />
       <ModalWrapper className={className} tabIndex="-1" visible={visible}>
         <ModalInner tabIndex="0" className="modal-inner">
-          {children}
+          <div className="modalHeader">
+            <button onClick={close}>X</button>
+          </div>
+          <div>
+            
+          </div>
+          
         </ModalInner>
       </ModalWrapper>
     </>
@@ -30,6 +37,8 @@ const ModalWrapper = styled.div`
   z-index: 1000;
   overflow: auto;
   outline: 0;
+  justify-content: center;
+	align-items: center;
 `
 
 const ModalOverlay = styled.div`
@@ -45,17 +54,14 @@ const ModalOverlay = styled.div`
 `
 
 const ModalInner = styled.div`
-  box-sizing: border-box;
-  position: relative;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  background-color: #fff;
-  border-radius: 10px;
-  width: 360px;
-  max-width: 480px;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  padding: 40px 20px;
+  display:flex;
+  width: 1200px;
+  height: 1000px;
+  margin-left:400px;
+  margin-top:10px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  flex-direction: column;
 `
 
 export default Modal

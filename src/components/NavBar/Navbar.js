@@ -5,7 +5,7 @@ import NavItem from '../NavItem/NavItem';
 
 class Navbar extends Component {
     render() {
-        const {active,onNavItemClick} = this.props;
+        const {onClick} = this.props;
         return (
             
             <div>
@@ -20,7 +20,7 @@ class Navbar extends Component {
                 <div>
                     <hr></hr>
                 </div>
-                <div><button className="createBtn">프로젝트 만들기</button></div>
+                <div><button onClick={onClick} className="createBtn">프로젝트 만들기</button></div>
                 
             </div>
         
