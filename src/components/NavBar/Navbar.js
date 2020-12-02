@@ -20,6 +20,8 @@ class Navbar extends Component {
                 <div>
                     <hr></hr>
                 </div>
+                <div><button className="createBtn">프로젝트 만들기</button></div>
+                
             </div>
         
         );

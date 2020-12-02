@@ -22,3 +22,30 @@ a:hover { color: #FF9F03; text-decoration: none;}
     width: 0px;
     border-right:0px;
 }
+
+.createBtn {
+    
+    display:flex;
+    width: 179.36px;
+    height: 55.86px;
+    background: #FF9F03;
+    border-radius: 10px;
+    font-size : 17px;
+    font-weight: bold;
+    color:#ffffff;
+    margin-top:30px;
+    margin-left:20px;
+    align-items: center;
+    justify-content: center;
+    border:0;
+    outline:0;
+}
+
+.createBtn:hover {
+    background: hsl(37, 100%, 55%) radial-gradient(circle, transparent 1%, #FFCB3D 1%) center/15000%;
+  }
+  .createBtn:active {
+    background-color: #ffffff;
+    background-size: 100%;
+    transition: background 0.4s;
+  }

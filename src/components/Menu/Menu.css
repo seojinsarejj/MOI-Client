@@ -49,6 +49,7 @@
     font-weight: bold;
     color: #FF9F03;
     border: 0px;
+    outline:0;
 }
 
 .welcome {
