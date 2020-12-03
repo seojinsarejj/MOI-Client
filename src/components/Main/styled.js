@@ -1,5 +1,5 @@
 import Styled from "styled-components";
-import People from "../../images/people.png";
+import People from "../../images/main.png";
 
 export const MainWrapper = Styled.div`
       width: 100vw;
@@ -22,13 +22,19 @@ export const LogoWrapper = Styled.div`
 
 export const MainTextWrapper = Styled.div`
       display : block;
-            margin: 0vh 0vw 0vh 20vw;
+            margin: 5vh 0vw 0vh 10vw;
       strong {
-            font-size: 2.3vw;
+            font-size: 3vw;
             color : #233863;
             font-weight: bold;
             span.orange {
                   color : #FA9746;
+            }
+            span.green {
+                  color : #3ABF7C;
+            }
+            span.purple {
+                  color : #A339FF;
             }
             p {
                   margin: 0vh 0vw 0vh 7vw;
@@ -37,21 +43,33 @@ export const MainTextWrapper = Styled.div`
 `;
 
 export const BtnWrapper = Styled.div`
-      vertical-align:bottom;
-      margin : 20vh 0px 2vw 5vw;
+      display:flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      margin-top : 20px;
+      margin-right: 20px;
 `;
 export const LoginBtn = Styled.button`
-      background: none;
-      padding : 8px 35px 8px 35px;
-      border: 3px solid #025F94;
-      color : #025F94;
-      border-radius : 40px;
+      
+      width: 200px;
+      height: 60px;
+      background: #FF9F03;
+      border-radius: 10px;
+      border : 0;
       font-size: 23px;
       font-weight: 800;
+      color:#ffffff;
+      margin-right:10px;
 `;
+
 export const SigninBtn = Styled.button`
-      margin-left: 3vw;
-      background: none;
-      border : none;
+      
+      width: 200px;
+      height: 60px;
+      background: #FF9F03;
+      border-radius: 10px;
+      border : 0;
       font-size: 23px;
+      font-weight: 800;
+      color:#ffffff;
 `;

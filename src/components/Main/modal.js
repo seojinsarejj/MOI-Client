@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Login, Register } from "..";
+import Login from "../Login/Login";
+import Register from "../Register/Register"
 
 const PopUpWrapper = styled.div`
   position: fixed;

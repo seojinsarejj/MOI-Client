@@ -8,24 +8,13 @@ import {
   SigninBtn,
   MainTextWrapper,
   LogoWrapper,
-} from "./Styled";
+} from "./styled";
 
 const Main = () => {
   const [loginOpen, setLoginOpen] = useState(false);
   const [regOpen, setRegOpen] = useState(false);
   return (
     <MainWrapper>
-      <LogoWrapper>
-        <img src={logo} alt="logo" />
-      </LogoWrapper>
-      <MainTextWrapper>
-        <strong>
-          "회의실을 <span className="orange">예약</span>하고
-          <br />
-          <p>자유롭게 이용하세요!"</p>
-        </strong>
-      </MainTextWrapper>
-      <div></div>
       <BtnWrapper>
         <LoginBtn
           onClick={() => {
@@ -40,8 +29,17 @@ const Main = () => {
           }}
         >
           회원가입
-        </SigninBtn>
+        </SigninBtn>  
+
       </BtnWrapper>
+      <MainTextWrapper>
+        <strong>
+          "<span className="orange">프로젝트</span>를 하고 싶으신가요?
+          <br />
+          <p>여기로 <span className="green">M</span><span className="purple">O</span><span className="orange">I</span>세요"</p>
+        </strong>
+      </MainTextWrapper>
+      <div></div>
       {loginOpen ? (
         <TogglePopUpTemplete
           setLoginOpen={() => {

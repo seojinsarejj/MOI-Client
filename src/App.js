@@ -3,6 +3,7 @@ import Menu from './components/Menu/Menu';
 import Navbar from './components/NavBar/Navbar';
 import Modal from './components/NavBar/modal';
 import Login from './components/Login/Login';
+import Main from './components/Main/main'
 import { Component } from 'react';
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
         <Navbar onClick={this.openCreateModal}/>
         <Modal visible={this.state.isCreateModalView} close={this.closeCreateModal}>Hello</Modal> */}
 
-        <Login/>
+        <Main/>
       </div>
     );
   }

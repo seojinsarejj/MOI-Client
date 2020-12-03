@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Login.css';
+import './Register.css';
 import logo from "../../images/favicon.png";
 
-class Login extends Component {
+class Register extends Component {
     render() {
         
         return (
@@ -14,9 +14,8 @@ class Login extends Component {
                     <div className = "loginInput">
                         <input className="InputBox" type="text" placeholder=" 이메일"></input>
                         <input className="InputBox" type="text" placeholder=" 비밀번호"></input>
-                        <button className = "transBtn">로그인</button>
+                        <button className = "transBtn">회원가입</button>
                     </div>
-                    
                 </div>
 
             </div>
@@ -26,4 +25,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default Register;
