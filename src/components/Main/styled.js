@@ -56,6 +56,7 @@ export const LoginBtn = Styled.button`
       background: #FF9F03;
       border-radius: 10px;
       border : 0;
+      outline:0;
       font-size: 23px;
       font-weight: 800;
       color:#ffffff;
@@ -69,6 +70,7 @@ export const SigninBtn = Styled.button`
       background: #FF9F03;
       border-radius: 10px;
       border : 0;
+      ouline : 0;
       font-size: 23px;
       font-weight: 800;
       color:#ffffff;
