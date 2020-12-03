@@ -4,10 +4,13 @@ import logo from "../../images/favicon.png";
 
 class Register extends Component {
     render() {
+
+        const {setRegOpen} = this.props;
         
         return (
             <div className = "loginPage">
                 <div className = "loginHeader">
+                    <button onClick={setRegOpen}/>
                     <div className = "loginLogo">
                         <img src={logo}></img>
                     </div>

@@ -4,10 +4,13 @@ import logo from "../../images/favicon.png";
 
 class Login extends Component {
     render() {
+
+        const {setLoginOpen} = this.props;
         
         return (
             <div className = "loginPage">
                 <div className = "loginHeader">
+                    <button onClick={setLoginOpen}/>
                     <div className = "loginLogo">
                         <img src={logo}></img>
                     </div>
