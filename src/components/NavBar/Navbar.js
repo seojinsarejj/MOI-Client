@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() {
         const {onClick} = this.props;
         return (
-            
+             
             <div>
                 <div class = "list">
                     <NavItem  name="프로젝트"/>
@@ -23,7 +23,7 @@ class Navbar extends Component {
                 <div><button onClick={onClick} className="createBtn">프로젝트 만들기</button></div>
                 
             </div>
-        
+       
         );
         
     }

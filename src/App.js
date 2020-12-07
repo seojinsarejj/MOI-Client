@@ -1,9 +1,5 @@
-import logo from './logo.svg';
-import Menu from './components/Menu/Menu';
-import Navbar from './components/NavBar/Navbar';
-import Modal from './components/NavBar/modal';
-import Login from './components/Login/Login';
-import Main from './components/Main/main'
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Main, Home } from './components';
 import { Component } from 'react';
 
 class App extends Component {
@@ -25,11 +21,10 @@ class App extends Component {
     
     return (
       <div className="App">
-        {/* <Menu/>
-        <Navbar onClick={this.openCreateModal}/>
-        <Modal visible={this.state.isCreateModalView} close={this.closeCreateModal}>Hello</Modal> */}
-
-        <Main/>
+        <BrowserRouter>
+          <Route exact path='/' component={Main} />
+          <Route path='/home' component={Home} />
+        </BrowserRouter>
       </div>
     );
   }
