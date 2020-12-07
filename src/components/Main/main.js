@@ -17,6 +17,7 @@ const Main = () => {
     <MainWrapper>
       <BtnWrapper>
         <LoginBtn
+          style={{ cursor:"pointer"}}
           onClick={() => {
             setLoginOpen(true);
           }}
@@ -24,6 +25,7 @@ const Main = () => {
           로그인
         </LoginBtn>
         <SigninBtn
+          style={{ cursor:"pointer"}}
           onClick={() => {
             setRegOpen(true);
           }}
