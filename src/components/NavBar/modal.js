@@ -12,8 +12,15 @@ function Modal({ className, visible, children, close }) {
           <div className="modalHeader">
             <button onClick={close}>X</button>
           </div>
-          <div>
-            
+          <div className="title">CREATE PROJECT</div>
+          <div className = "createModal">
+            <div>
+              <input className="InputBox" type="text" placeholder=" 프로젝트 이름"></input>
+              <input className="InputBox" type="text" placeholder=" 사용한 기술"></input>
+              <input className="ContentInputBox" type="text" placeholder=" 프로젝트 설명"></input>
+              <input className="InputBox" type="text" placeholder="GITHUB"></input>
+            </div>
+            <div>dd</div>
           </div>
           
         </ModalInner>
