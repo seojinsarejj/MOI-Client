@@ -60,7 +60,7 @@
 }
 
 .title {
-    position: absolute;
+    display: flex;
     left: 25.4%;
     right: 25.4%;
     top: 6.96%;
@@ -76,4 +76,17 @@
     color: #FF9F03;
 
     transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.transBtn {
+    width: 400px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #FF9F03;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size : 30px;
+    font-weight: bold;
+    color:#FF9F03;
+    margin-top: 50px;
 }
