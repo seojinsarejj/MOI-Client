@@ -11,7 +11,7 @@ class Login extends Component {
         return (
             <div className = "loginPage">
                 <div className = "loginHeader">
-                    <button onClick={setLoginOpen}/>
+                    <button className="xBtn" onClick={setLoginOpen}>X</button>
                     <div className = "loginLogo">
                         <img src={logo}></img>
                     </div>

@@ -10,7 +10,7 @@ class Register extends Component {
         return (
             <div className = "loginPage">
                 <div className = "loginHeader">
-                    <button onClick={setRegOpen}/>
+                    <button className="xBtn" onClick={setRegOpen}>X</button>
                     <div className = "loginLogo">
                         <img src={logo}></img>
                     </div>
