@@ -1,21 +1,31 @@
-import React, { Component } from 'react';
-import './Item.css';
+import React from "react";
+import Tag from "../tag/tag";
+import "./Item.css";
 
-class Item extends Component {
-    render() {
-        
-        return (
-            <div className="item">
-                <div className="projectTitle">
-                    프로젝트 이름
-                </div>
-                <div className="tag">
-                    #태그 #태그 #태그
-                </div>
-            </div>
-        );
-        
-    }
-}
+// class Item extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { title: "title", tags: [] };
+//   }
+
+//   render() {
+//     //const tag = "#" + tags.join(" #");
+//     return (
+
+//     );
+//   }
+// }
+
+const Item = ({ list }) => {
+  const mappingTagList = (list) =>
+    list.tags.map((item, idx) => <Tag tag={item} key={idx} />);
+
+  return (
+    <div className="item">
+      <div className="projectTitle">{list.title}</div>
+      <div className="tag">{mappingTagList(list)}</div>
+    </div>
+  );
+};
 
 export default Item;
