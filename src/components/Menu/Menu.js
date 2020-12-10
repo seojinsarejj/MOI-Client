@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../../images/logo.jpg';
 import profile from '../../images/profile.png';
 import './Menu.css';
+import { Link } from 'react-router-dom';
 
 
 class Menu extends Component {
@@ -19,7 +20,9 @@ class Menu extends Component {
                                 <span class = "welcomeText">님 환영합니다!</span>
                             </div>
                         </div>
+                        <Link to='/'>
                         <button class="logoutBtn">로그아웃</button>
+                        </Link>
                     </div>
     
                 </div>
