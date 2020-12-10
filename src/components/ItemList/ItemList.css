@@ -1,0 +1,15 @@
+@charset "UTF-8";
+* {
+    margin:0;
+    font-family: Roboto;
+}
+
+.itemList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+    
