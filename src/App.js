@@ -1,29 +1,26 @@
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Main, Home } from './components';
-import { Component } from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import { Main, Home } from "./components";
+import { Component } from "react";
 
 class App extends Component {
-
   state = {
-    isCreateModalView : false,
-  }
+    isCreateModalView: false,
+  };
 
-  openCreateModal = () => {       
+  openCreateModal = () => {
     this.setState({ isCreateModalView: true });
-    }
+  };
 
   closeCreateModal = () => {
     this.setState({ isCreateModalView: false });
-  }
-
+  };
 
   render() {
-    
     return (
       <div className="App">
         <BrowserRouter>
-          <Route exact path='/' component={Main} />
-          <Route path='/home' component={Home} />
+          <Route exact path="/" component={Main} />
+          <Route path="/home" component={Home} />
         </BrowserRouter>
       </div>
     );
